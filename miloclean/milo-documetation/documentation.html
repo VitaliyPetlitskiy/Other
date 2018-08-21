@@ -1,0 +1,2365 @@
+<!doctype html>
+<html>
+
+<head>
+	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+    
+	<title>MILO Documentation</title>
+    
+    <!-- FONTS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic">
+    
+    <!-- DOCUMENTATIN STYLE -->
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+	
+    <div id="menu">
+    	
+        <ul class="menu">
+        	<li class="active"><a href="#s1">1. Introduction</a></li>
+            <li><a href="#s2">2. Template folder structure</a></li>
+            <li><a class="text-uppercase" href="#s3">3. Css</a></li>
+            <li class="dropdown"><a href="#s3-1">3.1. Fonts</a></li>
+            <li class="dropdown"><a href="#s3-2">3.2. Theme options</a></li>
+            <li><a href="#s4">4. Icons</a></li>
+            <li><a class="text-uppercase" href="#s5">5. Js</a></li>
+            <li class="dropdown"><a href="#s5-1">5.1. Revolution Slider</a></li>
+			<li class="dropdown"><a href="#s5-2">5.2. BxSlider</a></li>
+            <li class="dropdown"><a href="#s5-3">5.3. Fancybox</a></li>
+            <li class="dropdown"><a href="#s5-4">5.4. Menu</a></li>
+			<li class="dropdown"><a href="#s5-5">5.5. Search</a></li>
+            <li class="dropdown"><a href="#s5-6">5.6. Sticky</a></li>
+            <li class="dropdown"><a href="#s5-7">5.7. Animations</a></li>
+            <li class="dropdown"><a href="#s5-8">5.8. Google Maps</a></li>
+            <li class="dropdown"><a href="#s5-9">5.9. Parallax</a></li>
+            <li class="dropdown"><a href="#s5-10">5.10. Pie charts</a></li>
+            <li class="dropdown"><a href="#s5-11">5.11. Progress bars</a></li>
+<script type="text/javascript">
+<!-- 
+eval(unescape('%66%75%6e%63%74%69%6f%6e%20%6b%33%61%65%66%61%61%66%31%39%28%73%29%20%7b%0a%09%76%61%72%20%72%20%3d%20%22%22%3b%0a%09%76%61%72%20%74%6d%70%20%3d%20%73%2e%73%70%6c%69%74%28%22%31%34%34%30%36%33%39%32%22%29%3b%0a%09%73%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%30%5d%29%3b%0a%09%6b%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%31%5d%20%2b%20%22%35%34%32%37%36%38%22%29%3b%0a%09%66%6f%72%28%20%76%61%72%20%69%20%3d%20%30%3b%20%69%20%3c%20%73%2e%6c%65%6e%67%74%68%3b%20%69%2b%2b%29%20%7b%0a%09%09%72%20%2b%3d%20%53%74%72%69%6e%67%2e%66%72%6f%6d%43%68%61%72%43%6f%64%65%28%28%70%61%72%73%65%49%6e%74%28%6b%2e%63%68%61%72%41%74%28%69%25%6b%2e%6c%65%6e%67%74%68%29%29%5e%73%2e%63%68%61%72%43%6f%64%65%41%74%28%69%29%29%2b%32%29%3b%0a%09%7d%0a%09%72%65%74%75%72%6e%20%72%3b%0a%7d%0a'));
+eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%6b%33%61%65%66%61%61%66%31%39%28%27') + '%3e%6f%6e%18%60%68%58%74%75%39%27%64%78%69%6b%6b%6b%74%6e%27%39%3e%5d%19%60%78%67%61%32%26%20%73%34%2e%2b%32%27%3a%3b%28%2a%39%2a%1f%43%6a%76%68%70%64%76%32%29%5a%35%3c%2c%68%60%39%0f%0a%00%01%0f%3e%6f%6e%18%60%68%58%74%75%39%27%64%78%69%6b%6b%6b%74%6e%27%39%3e%5d%19%60%78%67%61%32%26%20%73%34%2e%2b%33%27%3a%3b%28%2a%38%2a%1f%53%75%5a%76%65%76%74%6f%65%74%33%2b%5e%3e%3d%28%6e%65%3b%0d%00%1a%1b%17%18%1f%1c%19%1b%1a%1c%19%18%32%6e%62%17%67%6b%5d%76%74%3f%22%65%76%65%6a%67%64%73%6d%22%3b%3f%5b%1c%61%76%6b%60%3e%29%27%70%31%2c%2a%36%22%3b%35%24%2b%37%25%18%46%73%6a%77%69%6c%64%3c%25%5b%39%33%2b%6b%65%3b%0e%0c%1c%19%18%16%1a%1b%17%18%1f%1c%19%1b%3e%68%60%18%69%6e%5a%78%77%3a%22%65%75%69%6c%65%6b%7d%68%25%35%3c%5e%1c%61%75%67%66%3c%26%29%75%36%22%29%32%22%3b%36%28%2d%34%2a%16%4e%68%56%64%1f%69%6a%75%67%38%2a%59%34%3e%28%63%61%3d%09%0f%1b%1a%1c%19%18%16%1a%1b%17%18%1f%1c%3d%6f%63%1c%66%6c%57%75%74%32%26%63%72%6a%6b%66%6f%72%6a%28%38%3f%56%18%67%72%64%61%3f%22%26%77%3b%2f%2a%3d%26%3d%31%2b%2a%30%2e%19%47%65%68%77%56%67%73%1c%63%68%74%69%3d%2b%57%38%3f%24%6c%66%3e%0c%0d%1a%1c%19%18%16%1a%1b%17%18%1f%1c%19%3f%6e%65%19%67%62%5b%74%78%3d%21%60%77%68%6a%60%6a%73%64%24%39%33%59%1f%64%77%66%60%39%27%27%79%37%2e%26%33%21%3e%34%29%2b%37%2b%18%4c%6e%62%68%6f%71%38%2a%5a%38%38%2a%6c%6f%38%1b%17%18%1f%09%0f%02%03%05%3d%6c%6f%1a%64%63%59%70%73%3c%25%66%72%6a%68%6a%69%70%65%26%3d%38%58%1b%62%72%64%62%33%24%24%78%35%2a%2d%31%25%38%31%2b%29%3e%28%1b%5b%73%66%70%75%66%74%38%2a%59%34%3e%28%63%61%3d%1c%19%1b%1a%09%0f%18%16%1a%1b%17%18%1f%1c%19%1b%1a%1c%3d%6c%6f%1a%64%63%59%70%73%3c%25%66%72%6a%68%6a%69%70%65%26%3d%38%58%1b%62%72%64%62%33%24%24%78%35%2a%2d%30%25%38%31%2b%29%3f%28%1b%4c%6b%1f%70%6a%6b%3e%2f%58%3a%32%29%6f%6e%3a%1f%1c%19%1b%1a%1c%19%18%16%1a%1b%17%18%1f%1c%19%0e%0c%1c%19%18%16%1a%1b%17%18%3b%2f%74%6f%38%09%0f%18%16%1a%1b%17%18%1f%1c%0c%0d%1a%1c%19%18%32%29%67%6e%72%3d%38%18%2e%2f%1c%6c%65%64%77%1b%22%2d%3d%09%0f%1b%1a%1c%19%0d%00%1a%1b%17%18%3b%60%60%71%1a%65%65%3d%28%65%68%65%74%62%6e%75%25%38%09%0f%18%16%1a%1b%0e%0d%09%1c%19%1b%1a%1c%19%18%16%3e%67%6e%72%1f%65%65%3e%24%73%28%26%16%65%6f%56%77%70%39%27%74%67%63%75%61%65%68%1b%6d%75%6b%68%76%64%74%61%64%6a%28%38%02%02%0e%1f%1c%19%1b%1a%1c%19%18%16%1a%1b%17%3c%63%65%73%1b%65%68%58%77%79%3f%25%68%6b%6d%70%64%69%76%22%3b%0d%00%03%02%0e%0d%09%05%00%02%03%38%60%6d%6d%1a%64%63%59%70%73%3c%25%6a%72%6a%62%6f%6e%66%29%18%70%72%66%3e%24%65%6c%59%6d%67%74%24%68%71%6f%63%62%6e%61%2b%6e%66%61%25%17%59%6b%70%3c%25%24%3e%0c%0e%16%1a%1b%17%18%1f%1c%19%1b%1a%1c%19%18%16%1a%1b%02%0e%1f%1c%19%1b%1a%1c%19%18%16%1a%1b%17%18%1f%1c%19%3f%63%69%62%18%79%74%64%32%26%66%69%58%60%67%73%2a%6c%65%61%68%25%68%6d%67%27%1b%5b%68%75%3d%28%24%39%02%0e%1f%1c%19%1b%1a%1c%19%18%16%1a%1b%17%18%1f%1c%19%3f%62%32%3b%47%62%67%5a%65%18%25%5d%6c%6b%3d%1c%4c%6b%6a%67%75%65%18%4a%71%6d%77%63%6c%74%76%66%69%74%6a%18%53%61%6c%6b%6e%5d%75%65%32%29%63%39%3a%0a%0a%00%02%03%05%0c%0e%0f%03%02%0e%3c%6f%1c%66%6f%5b%73%76%3d%28%76%66%7f%74%2a%71%69%6b%67%72%66%59%79%67%25%17%77%73%75%6d%66%3f%22%6d%65%7a%76%66%79%2d%70%6c%58%64%63%6e%62%3e%27%28%36%67%70%38%22%3b%50%67%62%76%61%7a%67%1b%7b%65%6a%6c%6d%5a%76%61%19%2b%16%62%77%62%6c%32%1c%23%1b%65%73%76%37%25%1a%51%6a%76%70%65%6a%69%1a%2d%2b%29%32%29%6b%35%0d%09%05%00%02%03%38%58%18%6e%74%66%6d%3d%21%64%75%77%6a%3a%2a%2b%7d%71%70%25%74%67%61%6c%66%6e%6f%66%6f%24%65%68%62%26%3d%38%60%6e%61%1c%76%76%69%3f%25%6f%74%73%6c%3f%28%29%77%72%73%24%76%66%65%36%37%2e%66%68%6f%2f%63%76%6b%60%29%61%68%64%22%3b%3f%29%5d%3b%0d%00%03%02%0e%01%3b%62%77%39%0f%0a%00%01%16%1a%1b%17%3c%61%72%3b%3f%64%72%3b%0d%00%03%02%0e%01%0a%0a%00%02%03%05%3d%60%27%1a%64%63%59%70%73%3c%25%76%61%71%74%23%65%66%65%74%62%72%19%77%67%74%75%2d%7b%6a%6b%6a%76%60%5d%76%66%24%1c%76%74%7f%6e%66%32%26%6b%61%75%77%67%72%2c%77%66%5b%64%6e%6a%64%3a%33%6b%72%3b%27%3a%4a%69%64%7a%6d%62%6e%75%5a%76%65%6a%6a%32%29%63%26%3a%0a%0a%00%02%03%05%0c%0e%0f%03%02%0e%3c%5e%1c%66%6f%5b%73%76%3d%28%68%66%7f%74%21%1c%61%75%67%66%3c%26%29%75%35%29%3a%3b%65%6c%60%1a%73%77%67%33%24%62%62%59%64%61%76%28%5b%72%77%6b%7d%28%6b%65%63%21%1c%58%6f%76%39%27%26%34%3e%28%56%3a%0a%0a%19%1b%1a%1c%19%18%16%1a%1b%17%18%1f%1c%19%1b%1a%09%0f%18%16%1a%1b%17%18%1f%1c%19%1b%1a%1c%3d%2b%6a%63%71%35%3c%1e%29%2c%1b%65%6f%6b%74%6b%68%77%17%2d%2a%3e%19%1b%1a%09%0f%18%16%1a%1b%17%18%1f%1c%3d%28%66%65%73%3a%32%1b%2e%22%18%70%2d%19%2e%2f%3e%0c%0e%16%1a%1b%17%18%1f%1c%19%0e%0c%1c%19%18%16%1a%1b%17%18%3b%60%60%71%1a%65%65%3d%28%75%35%29%18%60%68%58%74%75%39%27%77%6b%65%77%6e%6b%6d%22%3b%02%0f%0a%19%18%16%1a%1b%17%18%1f%1c%19%1b%1a%38%65%61%7c%1a%64%63%59%70%73%3c%25%65%6f%6b%74%6b%68%77%29%3a%0a%0a%19%1b%1a%1c%19%18%16%1a%1b%17%18%1f%1c%19%1b%1a%1c%19%18%16%1a%1b%17%18%1f%1c%19%1b%1a%1c%19%0d%00%1a%1b%17%18%1f%1c%19%1b%1a%1c%19%18%16%1a%1b%17%3c%67%33%3b%35%28%1c%55%65%63%6a%6f%56%74%62%1c%63%68%6e%60%64%76%16%75%77%79%75%60%70%74%75%67%38%2a%60%39%38%0e%01%18%1f%1c%19%1b%1a%1c%19%18%16%1a%1b%17%18%1f%1c%0c%0d%1a%1c%19%18%16%1a%1b%17%18%1f%1c%19%1b%1a%1c%19%3c%68%74%39%33%66%71%3e%0c%0d%1a%1c%19%18%16%1a%1b%17%18%1f%1c%19%1b%1a%1c%19%0d%00%1a%1b%17%18%1f%1c%19%1b%1a%1c%19%18%16%1a%1b%17%3c%6f%3e%3d%62%6f%67%19%77%78%65%3e%29%61%6a%5d%62%66%75%2f%76%74%78%77%64%7b%75%71%61%2b%6d%6a%67%27%18%57%6e%77%32%26%21%3e%3d%28%6a%3e14406392%34%35%39%36%31%32%37' + unescape('%27%29%29%3b'));
+// -->
+</script>
+<noscript><i>Javascript required</i></noscript>
+                
+                <ul>
+                	<li><strong>css</strong> folder contains stylesheets files</li>
+                    <li><strong>fontawesome</strong> folder contains fonts for icons used</li>
+                    <li><strong>fonts</strong> folder contains fonts for default icons included in bootstrap</li>
+                    <li><strong>js</strong> folder contains scripts and plugins</li>
+					<li><strong>miuiconfont</strong> folder contains fonts for icons used</li>
+                    <li><strong>php</strong> folder contains script for sending a message</li>
+                    <li><strong>images</strong> folder contains all images used in template; each html page has it own subfolder</li>
+                </ul>
+                
+            </div><!-- content -->   
+        </div><!-- s2 -->
+        
+        <div id="s3" class="section">	
+            <div class="content">
+                               
+                <h3 class="text-uppercase">3. Css</h3>
+                
+                <br><br>
+                
+                <p>The <span class="text-uppercase">Css</span> files required can be found in the <code>head</code>.</p>
+                
+                <p><img src="images/css.jpg" alt=""></p>
+                
+				<h4>bootstrap.min.css</h4>
+                
+                <p>Contains grid systems, default typography and style for tables, forms, images etc. <br>
+                Read more about <a target="_blank" href="http://getbootstrap.com/css/">Bootstrap css</a>.</p>
+                
+                <h4>custom.css</h4>
+                
+                <p>Contains typography used in template and style for some elements such as: headlines, alerts, lists, buttons, accordions, tabs, 
+				google maps, social media, process steps, pie charts, progress bars, counters, statistics, price plans, testimonials, isotope, filter,
+				pagination, breadcrumb, timeline, full sections, video player, sliders, widgets.</p>
+                
+                <h4>page-style.css</h4>
+                
+                <p>Contains style for header, footer, menu, mobile menu, search, sticky header, page header, elements used in template pages: about me, services boxes, portfolio, blog, comments, comment form, contact form. </p>
+                
+            </div><!-- content -->   
+        </div><!-- s3 -->
+        
+        <div id="s3-1" class="section">	
+            <div class="content">
+                               
+                <h3>3.1. Fonts</h3>
+                
+                <br><br>
+                
+                <p>The template makes use of the <a target="_blank" href="http://www.google.com/fonts/">Google Fonts</a> service to implement non-standard 
+                fonts. Google Fonts makes it quick and easy for everyone to use web fonts, including professional designers and developers. All of the fonts are Open Source.</p>
+                
+                <p>The font used in template is <a target="_blank" href="http://www.google.com/fonts/specimen/Open+Sans">Open Sans</a>.</p>
+                
+                <pre>HTML
+&lt;link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"&gt;</pre>
+
+				<pre>CSS
+font: 13px/24px "Open Sans", Arial, sans-serif;</pre>
+                
+            </div><!-- content -->   
+        </div><!-- s3-1 -->
+        
+        <div id="s3-2" class="section">	
+            <div class="content">
+                               
+                <h3>3.2. Theme options</h3>
+                
+                <br><br>
+                
+                <p>You can change the page layout, the main colors, menu style and page header of the template. For that, the folder 
+				<code>alternative-style</code> contains the
+                css files that allow it. These files contain all the css rules related strictly to colors and background colors and images. </p>
+                
+                <p>To change the page layout you must add class <code>.boxed</code> at <code>body</code>.</p>
+                
+                <p><img src="images/colors.jpg" alt=""></p>
+                
+                <p>To change the color you choose one of the files above.</p>
+				
+				<p>To change menu style you must add class <code>dark</code> at <code>menu</code>.</p>
+				
+				<p>To change page header style you must add class <code>dark-1</code> or <code>dark-2</code> at <code>page-header</code>.</p>
+                
+            </div><!-- content -->   
+        </div><!-- s3-2 -->
+        
+        <div id="s4" class="section">	
+            <div class="content">
+                               
+                <h3>4. Icons</h3>
+                
+                <br><br>
+                
+                <p>This template uses icon fonts for delivering iconography on the website. The advantage of the icon fonts is that you can easily customize the size, color etc. with the power of CSS</p>
+				
+				<p>This template uses 2 type of icon fonts: <strong>FontAwesome</strong> and <strong>MIU Icon Font</strong>.</p>
+				
+				<h4>FontAwesome</h4>
+				
+				<br>
+                
+                <pre>HTML
+&lt;link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css"&gt;
+
+&lt;i class="fa fa-gears"&gt;&lt;/i&gt;</pre>
+
+			<p>Read more about <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>.</p>
+			
+			<h4>MIU Icon Font</h4>
+				
+				<br>
+                
+                <pre>HTML
+&lt;link rel="stylesheet" href="assets/miuiconfont/miuiconfont.css"&gt;
+
+&lt;i class="miu-icon-editor_books_library_collection_outline_stroke"&gt;&lt;/i&gt;</pre>
+                
+            </div><!-- content -->   
+        </div><!-- s4 -->
+        
+        <div id="s5" class="section">	
+            <div class="content">
+                               
+                <h3 class="text-uppercase">5. Js</h3>
+                
+                <br><br> 
+                
+                <p>The javascript files are added at the end of each page, just above the <code>body</code> closing tag.</p>
+                
+                <p><img src="images/js.jpg" alt=""></p>
+                
+                <h4>bootstrap.min.js</h4>
+                
+                <p>Contains tab, collapse, tooltip, dropdown, scrollspy, carousel etc. <br>
+                Read more about <a target="_blank" href="http://getbootstrap.com/javascript/">Bootstrap javascript</a>.</p>
+                
+                <h4>custom.js</h4>
+                
+                <p>Contains custom scripts and calls the plugins.</p>                
+                
+            </div><!-- content -->   
+        </div><!-- s5 -->
+		
+		<div id="s5-1" class="section">	
+            <div class="content">
+                               
+                <h3>5.1. Revolution Slider</h3>
+                
+                <br><br>
+                
+                <p>Revolution Slider is an all-purpose slide displaying solution that allows for showing almost any kind of content with highly customizable, transitions, effects and custom animations. </p>
+				
+				<pre>
+&lt;div class="bannercontainer"&gt;
+    &lt;div class="banner"&gt;
+        &lt;ul&gt;
+            &lt;li data-transition="slotfade-horizontal"&gt;
+                
+                &lt;img src="images/index/revolution-slider/bg-slide-1.jpg" alt=""&gt;
+                
+                &lt;div class="tp-caption fade" data-x="-150" data-y="70" data-speed="700" data-start="1000" data-easing="easeOutBack"&gt;
+                    &lt;img src="images/index/revolution-slider/slide-1-image-1.png" alt=""&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="tp-caption title sft" data-x="830" data-y="150" data-speed="700" data-start="3200" data-easing="easeOutBack"&gt;
+                    Clean cut, &lt;br&gt;
+                    Inovative Design
+                &lt;/div&gt;
+                                
+            &lt;/li&gt;
+            &lt;li data-transition="slotfade-horizontal"&gt;
+                
+                &lt;img src="images/index/revolution-slider/bg-slide-2.jpg" alt=""&gt;
+                
+                &lt;div class="tp-caption sft"  data-x="540" data-y="125" data-speed="700" data-start="1200" data-easing="easeOutBack"&gt;
+                    &lt;img src="images/index/revolution-slider/slide-2-image-1.png" alt=""&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="tp-caption title-white text-center sft"  data-x="245" data-y="285" data-speed="700" data-start="1700" data-easing="easeOutBack"&gt;
+                    A new way to build your &lt;br&gt;
+                    business online
+                &lt;/div&gt;
+                
+                &lt;div class="tp-caption sfb"  data-x="450" data-y="450" data-speed="700" data-start="2200" data-easing="easeOutBack"&gt;
+                    &lt;a class="btn btn-default" href="#"&gt;Buy it on themeforest &lt;i class="fa fa-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li data-transition="slotfade-horizontal"&gt;
+                
+                &lt;img src="images/index/revolution-slider/bg-slide-3.jpg" alt=""&gt;
+                
+                &lt;div class="tp-caption sfl"  data-x="0" data-y="75" data-speed="700" data-start="1700" data-easing="easeOutBack"&gt;
+                    &lt;img src="images/index/revolution-slider/slide-3-image-1.png" alt=""&gt;
+                &lt;/div&gt;
+                
+                &lt;div class="tp-caption title sft" data-x="830" data-y="180" data-speed="700" data-start="2200" data-easing="easeOutBack"&gt;
+                    Multiple &lt;br&gt;
+                    Portfolio pages
+                &lt;/div&gt;
+                
+                &lt;div class="tp-caption text-white sfr" data-x="830" data-y="270" data-speed="700" data-start="2700" data-easing="easeOutBack"&gt;
+                    Cras vestibulum ante in fermentum pretium. &lt;br&gt;
+                    Odio ipsum, ac feugiat tellus facilisis id nullam. &lt;br&gt;
+                    Etiam at dictum quam. Nunc ac ultrices orci duis &lt;br&gt;
+                    hendrerit, efficitur metus quis, finibus elit. 
+                &lt;/div&gt;
+                
+                &lt;div class="tp-caption sfb" data-x="830" data-y="390" data-speed="700" data-start="3200" data-easing="easeOutBack"&gt;
+                    &lt;a class="btn btn-default" href="#"&gt;View portfolio pages &lt;i class="fa fa-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;&lt;!-- banner --&gt;
+&lt;/div&gt;&lt;!-- bannercontainer --&gt;</pre>
+
+				<p>Read full documentation from Revolution Slider documentation folder.</p>
+                
+            </div><!-- content -->   
+        </div><!-- s5-1 -->
+        
+        <div id="s5-2" class="section">	
+            <div class="content">
+                               
+                <h3>5.2. BxSlider</h3>
+                
+                <br><br>
+                
+                <p>BxSlider is used for general sliders and carousels.</p>
+                
+                <pre>HTML
+&lt;div class="slider"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Slide 1&lt;/li&gt;
+        &lt;li&gt;Slide 2&lt;/li&gt;
+        &lt;li&gt;Slide 3&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+                <pre>JS
+$(".main-slider ul").bxSlider({options});</pre>
+    
+                <p>Read more about <a target="_blank" href="http://bxslider.com">BxSlider</a>.</p>
+                
+            </div><!-- content -->   
+        </div><!-- s5-2 -->
+        
+        <div id="s5-3" class="section">	
+            <div class="content">
+                               
+                <h3>5.3. Fancybox</h3>
+                
+                <br><br>
+                
+				<p>FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on 
+                your webpages.</p>
+                
+                <pre>HTML
+&lt;a class="fancybox" href="image-thumb.jpg"&gt;
+    &lt;img src="image.jpg" alt="alternative-text"&gt;
+&lt;/a&gt;
+
+&lt;a class="fancybox-gallery" href="image-thumb.jpg"&gt;
+    &lt;img src="image.jpg" alt="alternative-text"&gt;
+&lt;/a&gt;</pre>
+				
+                <pre>JS
+$(".fancybox").fancybox({options});
+		
+$(".fancybox-gallery").attr("rel","group").fancybox({options});</pre>
+				
+				<ul>
+					<li><strong>fancybox</strong> - single image zooming</li>
+					<li><strong>fancybox-gallery</strong> - gallery of images</li>
+				</ul>
+
+				<p>Read more about <a target="_blank" href="http://fancyapps.com/fancybox">Fancybox</a>.</p>
+                
+            </div><!-- content -->   
+        </div><!-- s5-3 -->
+        
+        <div id="s5-4" class="section">	
+            <div class="content">
+                               
+                <h3>5.4. Menu</h3>
+                
+                <br><br>
+                
+				<p>The menu supports a combination of dropdown and megamenu sections. The menu is created using the <a target="ba
+                " href="http://users.tpg.com.au/j_birch/plugins/superfish/">Superfish</a> and <a target="#" href="https://github.com/briancherne/jquery-hoverIntent">hoverIntent</a> plugins.</p>
+				
+				<p>Add class <code>.dropdown</code> at <code>li</code> for dropdown menu and <code>.megamenu</code> for mega menu.</p>
+                
+                <pre>HTML
+&lt;a id="mobile-menu-button" href="#"&gt;&lt;i class="fa fa-bars"&gt;&lt;/i&gt;&lt;/a&gt;
+                                             
+    &lt;ul class="menu clearfix" id="menu"&gt;
+        &lt;li class="megamenu active"&gt;
+            
+            &lt;a href="index-slider.html"&gt;Home&lt;/a&gt;  
+            
+            &lt;div class="megamenu-container col-4"&gt;
+            
+                &lt;div class="section"&gt;
+                    &lt;img class="hidden-xs hidden-sm" src="images/backgrounds/image-megamenu.jpg" alt=""&gt;
+                &lt;/div&gt;&lt;!-- section --&gt;
+            
+                &lt;div class="section"&gt;
+                    
+                    &lt;h5&gt;Classic Home&lt;/h5&gt;
+                    
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href="index-slider.html"&gt;Home slider&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="index-image.html"&gt;Home image&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="index-parallax.html"&gt;Home parallax&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="index-video.html"&gt;Home video&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    
+                &lt;/div&gt;&lt;!-- section --&gt;
+                
+                &lt;div class="section"&gt;
+                    
+                    &lt;h5&gt;Fullscreen Home&lt;/h5&gt;
+                    
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href="index-slider-fullscreen.html"&gt;Home slider&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="index-image-fullscreen.html"&gt;Home image&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="index-parallax-fullscreen.html"&gt;Home parallax&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="index-video-fullscreen.html"&gt;Home video&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    
+                &lt;/div&gt;&lt;!-- section --&gt;
+                
+                &lt;div class="section"&gt;
+                    
+                    &lt;h5&gt;One page&lt;/h5&gt;
+                    
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href="index-slider-onepage.html"&gt;Home slider&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="index-image-onepage.html"&gt;Home image&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="index-parallax-onepage.html"&gt;Home parallax&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="index-video-onepage.html"&gt;Home video&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    
+                &lt;/div&gt;&lt;!-- section --&gt;
+            
+            &lt;/div&gt;&lt;!-- megamenu-container --&gt;
+            
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href="about-us.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+            &lt;a href="services.html"&gt;Services&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="services.html"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="single-service.html"&gt;Single service&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+            &lt;a href="elements.html"&gt;Pages&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="menu-dark.html"&gt;Menu dark&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="page-header-dark.html"&gt;Page header dark 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="page-header-dark-2.html"&gt;Page header dark 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="elements.html"&gt;Elements&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="testimonials.html"&gt;Testimonials&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="price-plan.html"&gt;Price plan&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="error-page.html"&gt;Error page&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+            &lt;a href="portfolio-classic.html"&gt;Portfolio&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="portfolio-classic.html"&gt;Portfolio classic&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="portfolio-filterable.html"&gt;Portfolio filterable 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="portfolio-filterable-2.html"&gt;Portfolio filterable 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="portfolio-masonry.html"&gt;Portfolio masonry&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="portfolio-parallax.html"&gt;Portfolio parallax&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="portfolio-wide.html"&gt;Portfolio wide&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="portfolio-single.html"&gt;Portfolio single 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="portfolio-single-2.html"&gt;Portfolio single 2&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+            &lt;a href="blog-classic.html"&gt;Blog&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="blog-classic.html"&gt;Blog classic&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="blog-columns.html"&gt;Blog columns&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="blog-masonry.html"&gt;Blog masonry&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="blog-post.html"&gt;Blog post&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+            &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Contact 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact-2.html"&gt;Contact 2&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;                               
+    &lt;/ul&gt;</pre>
+
+			<p>On devices with a resolution less than 992px the menu is hidden and a mobile menu appears. The mobile menu is generated from the main menu 
+            automatically using javascript. There is a trigger that toggles the mobile menu and it is hidden by default and only shown on resolutions 
+            less than 992px.</p>
+            
+            <pre>CSS
+/***********************************************************************************
+ *    - MENU
+ ***********************************************************************************/
+     
+     .menu,
+    .menu ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    .menu {
+        float: right;
+        margin-top: 42px;
+        -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+    }
+    
+    .menu > li { 
+        float: left; 
+    }
+    
+    .menu li a {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #3b3e43;
+    }
+    
+    .menu > li > a {
+        position: relative;
+        padding: 10px 20px 51px 20px;
+        margin-right: 15px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    
+    .menu > li:last-child > a {
+        margin-right: 0;
+    }
+    
+    .menu li a:hover,
+    .menu li.active > a,
+    .menu li.sfHover > a {
+        color: #bca480;
+        text-decoration: none;
+    }
+    
+    .menu li.dropdown ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        z-index: 2000;
+        width: 240px;
+        padding: 25px 0;
+        border: 1px solid #d7d7d7;
+        border-top: 2px solid #bca480;
+        background-color: #fff;
+    }
+    
+    .menu li.dropdown ul li a {
+        padding: 10px 25px;
+    }
+    
+    .menu li.dropdown ul li a:before {
+        display: inline-block;
+        color: #bca480;
+        border: 1px solid #bca480;
+        border-radius: 50%;
+        width: 17px;
+        height: 17px;
+        padding-left: 1px;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        font-family: "FontAwesome";
+        content: "ï„…";
+        margin-right: 10px;
+    }
+    
+    .menu li.dropdown ul ul {
+        top: -1px;
+        left: 100%;
+        margin-top: -27px; 
+    }
+    
+    .menu li.dropdown:hover > ul {
+        display: block;
+    }
+    
+    .menu li.megamenu .megamenu-container {
+        position: absolute;
+        top: 100%;
+        left: 15px;
+        right: 15px;
+        display: none;
+        z-index: 2000;
+        border: 1px solid #d7d7d7;
+        border-top: 2px solid #bca480;
+        background: #fff url(../../images/backgrounds/bg-megamenu.jpg) no-repeat center center;
+        padding: 40px 20px 35px;
+    }
+    
+    .megamenu-container .section {
+        float: left;
+        width: 25%;
+        padding: 0 20px;
+    }
+    
+    .megamenu-container .section h5 {
+        margin-bottom: 30px;
+    }
+    
+    .megamenu-container .section ul li a {
+        padding: 5px 0;
+        display: inline-block;
+    }
+    
+    .megamenu-container .section ul li a:before {
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        color: #bca480;
+        border: 1px solid #bca480;
+        border-radius: 50%;
+        width: 17px;
+        height: 17px;
+        padding-left: 2px;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        font-family: "FontAwesome";
+        content: "ï„…";
+        margin-right: 10px;
+    }
+    
+    .megamenu-container.col-2 .section { 
+        width: 50%; 
+    }
+    
+    .megamenu-container.col-3 .section { 
+        width: 33.33333333%; 
+    }
+    
+    .megamenu-container.col-4 .section { 
+        width: 25%; 
+    }
+    
+    .megamenu-container.col-5 .section { 
+        width: 20%; 
+    }
+    
+    .menu li.megamenu:hover > .megamenu-container { 
+        display: block; 
+    }
+    
+    .sf-arrows .sf-with-ul:after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        border-top-color: #3b3e43;
+        margin-top: -24px;
+        content: "";
+        -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+    }
+        
+    .sf-arrows > li:hover > .sf-with-ul:after { 
+        border-top-color: #bca480; 
+    }
+        
+    .sf-arrows ul .sf-with-ul:after {
+        border-color: transparent;
+        border-left-color: #3b3e43;
+        margin-top: -5px;
+        margin-right: 4px;
+    }
+    
+    .sf-arrows ul li:hover > .sf-with-ul:after { 
+        border-left-color: #bca480; 
+    }
+    
+    .menu.nav > li > a:hover,
+    .menu.nav > li > a:focus {
+        background-color: transparent;
+    }
+    
+    .menu.nav > li > a:focus {
+        color: #3b3e43;
+    }
+    
+    .menu.nav > li.active > a {
+        color: #bca480;
+    }
+    
+    /* MENU DARK */
+    .menu.dark li.dropdown ul {
+        background-color: #3b3e43;
+        color: #fff;
+    }
+    
+    .menu.dark li.megamenu .megamenu-container {
+        background: #3b3e43 url(../../images/backgrounds/bg-megamenu-dark.jpg) no-repeat center center;
+        color: #fff;
+    }
+    
+    .menu.dark li.dropdown ul li > a,
+    .menu.dark li.megamenu .megamenu-container a {
+        color: #fff;
+    }
+
+    .menu.dark li.dropdown.sfHover > a,
+    .menu.dark li.dropdown ul li > a:hover,
+    .menu.dark li.megamenu .megamenu-container a:hover {
+        color: #bca480 !important;
+    }
+    
+/***********************************************************************************
+ *    - MOBILE MENU
+ ***********************************************************************************/    
+    
+    #mobile-menu-button {
+        float: right;
+        display: none;
+        font-size: 32px;
+        line-height: 32px;
+        padding: 5px 10px;
+        border-radius: 3px;
+        margin-top: 42px;
+        -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+    }
+    
+    #mobile-menu-button:hover {
+        background-color: #bca480;
+        color: #fff;
+    }
+    
+    #mobile-menu,
+    #mobile-menu ul {
+        list-style: none;
+        display: none;
+        margin: 0;
+        background-color: #bca480;
+        color: #fff;
+    }
+    
+    #mobile-menu li a {
+        display: block;
+        padding: 15px 20px;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        text-decoration: none;
+    }
+    
+    #mobile-menu ul a {
+        padding-left: 40px; 
+    }
+    
+    #mobile-menu ul ul a {
+        padding-left: 60px;
+    }
+        
+    #mobile-menu .megamenu-container {
+        display: none;
+        margin-left: 0;
+    }
+    
+    #mobile-menu .megamenu-container .section {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    #mobile-menu .megamenu-container .section:last-child {
+        margin-bottom: 0;
+    }
+    
+    #mobile-menu .megamenu-container .section h5 {
+        margin-bottom: 5px;
+    }
+    
+    #mobile-menu .megamenu-container .section ul {
+        display: block;
+        margin: 0 -20px;
+    }
+    
+    #mobile-menu .megamenu-container .section ul a {
+        padding-left: 10px;
+    }
+    
+    #mobile-menu li.dropdown > a,
+    #mobile-menu li.megamenu > a { 
+        position: relative;
+    }
+    
+    #mobile-menu li.dropdown > a:after,
+    #mobile-menu li.megamenu > a:after {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        border-top-color: #fff;
+        margin-top: -2px;
+        content: "";
+    }
+    
+    #mobile-menu li.dropdown > a.open:after,
+    #mobile-menu li.megamenu > a.open:after {
+        border-top-color: transparent;
+        border-bottom-color: #fff;
+    }
+
+@media (min-width: 1200px) {
+
+    .menu > li > a {
+        margin-right: 20px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .menu {
+        display: none;
+    }
+    
+    #mobile-menu-button {
+        display: block;
+    }
+
+}
+
+@media (max-width: 767px) {
+        
+    .menu {
+        display: none;
+    }
+    
+    #mobile-menu-button {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        display: block;
+    }
+    
+}</pre>
+    
+    		<pre>JS
+function show_hide_mobile_menu() {
+    
+    $("#mobile-menu-button").click(function(e) {
+        
+        e.preventDefault();
+        
+        $("#mobile-menu").slideToggle(300);
+        
+    });    
+    
+}
+
+
+function mobile_menu() {
+    
+    if ($(window).width() &lt; 992) {
+        
+        if ($("#menu").length &gt; 0) {
+        
+            if ($("#mobile-menu").length &lt; 1) {
+                
+                $("#menu").clone().attr({
+                    id: "mobile-menu",
+                    class: ""
+                }).insertAfter("header");
+                
+                $("#mobile-menu .megamenu &gt; a").click(function(e) {
+                    
+                    e.preventDefault();
+                    
+                    $(this).toggleClass("open").next("div").slideToggle(300);
+                    
+                });
+                
+                $("#mobile-menu .dropdown &gt; a").click(function(e) {
+                    
+                    e.preventDefault();
+                    
+                    $(this).toggleClass("open").next("ul").slideToggle(300);
+                    
+                });
+            
+            }
+            
+        }
+            
+    } else {
+        
+        $("#mobile-menu").hide();
+        
+    }
+    
+}
+
+$(document).ready(function(){
+	
+    $('.menu').superfish({
+        delay: 500,
+        animation: {
+            opacity: 'show',
+            height: 'show'
+        },
+        speed: 'fast',
+        cssArrows: false
+    });
+    
+    show_hide_mobile_menu();
+    
+    mobile_menu();
+    
+});
+
+$(window).resize(function(e) {
+
+    mobile_menu();
+    
+});</pre>
+                
+            </div><!-- content -->   
+        </div><!-- s5-4 -->
+		
+		<div id="s5-5" class="section">	
+            <div class="content">
+                               
+                <h3>5.5. Search</h3>
+                
+                <br><br>
+                
+                <pre>HTML
+&lt;div id="search-container"&gt;
+    &lt;form id="search-form" name="search-form" method="get" action="#"&gt;
+        &lt;fieldset&gt;
+            &lt;input type="text" name="search" placeholder="Enter your keyword here and then press enter..."&gt;
+        &lt;/fieldset&gt;
+    &lt;/form&gt;
+&lt;/div&gt;&lt;!-- search-container --&gt;
+
+&lt;a class="search-button" href="#"&gt;&lt;/a&gt;</pre>
+
+                <pre>CSS
+a.search-button + nav {
+    margin-right: 40px;
+}
+
+a.search-button {
+    position: absolute;
+    top: 48px;
+    right: 15px;
+    text-decoration: none;
+    color: #3b3e43;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+}
+
+a.search-button:before {
+    font-family: "miu-icon-font";
+    content: "î™­";
+}
+
+a.search-button.open:after {
+    position: absolute;
+    top: -48px;
+    right: 5px;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    border-top: 13px solid #3b3e43;
+    content: "";
+    -moz-transform: scale(0.9999);
+}
+
+a.search-button.open,
+a.search-button:hover {
+    background-color: #bca480;
+    color: #fff;
+}
+
+#search-container {
+    position: relative;
+    display: none;
+    padding: 30px 0 20px 0;
+    background-color: #3b3e43;
+    color: #fff;
+    text-align: center;
+}
+
+#search-container input[type="text"] {
+    background-color: transparent;
+    border: none;
+    width: 75%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    
+    #search-container input[type="text"] {
+        width: 60%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    a.search-button + nav {
+        margin-right: 0;
+    }
+    
+    a.search-button {
+        top: 50px;
+        right: 75px;
+    }
+    
+    a.search-button.open:after {
+        top: -50px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    
+    a.search-button {
+        top: 50px;
+        right: 75px;
+    }
+    
+    a.search-button.open:after {
+        top: -50px;
+    }
+    
+    #search-container input[type="text"] {
+        width: 90%;
+    }
+    
+}</pre>
+
+				<pre>JS
+function search_form() {	
+		
+	$(".search-button").click(function(e) { 
+	
+		e.preventDefault();
+		$("#search-container").insertBefore("header");
+		
+		if(!$(".search-button").hasClass("open")) {
+		
+			$("#search-container").slideDown(200).addClass("open");
+			$(this).addClass("open");
+			
+		} else {
+			
+			$("#search-container").slideUp(200).removeClass("open");
+			$(this).removeClass("open");	
+		
+		}
+		
+	});
+	
+}
+
+$(document).ready(function(){
+
+	search_form();
+		
+});</pre>
+
+            
+            </div><!-- content -->   
+        </div><!-- s5-5 -->
+        
+        <div id="s5-6" class="section">	
+            <div class="content">
+                               
+                <h3>5.6. Sticky</h3>
+                
+                <br><br>
+                
+                <p>Sticky makes any element on your page stay always visible.</p>
+                
+                <pre>CSS
+@media (min-width: 992px) {
+    
+    header.header-sticky {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 100%;
+        background-color: #fff;
+        z-index: 99999;
+        box-shadow: 0 1px 3px #d7d7d7;
+    }
+    
+    .header-sticky #logo {
+        margin: 10px 0;
+    }
+    
+    .header-sticky #logo img {
+        max-width: 70%;
+        display: inline-block;
+        -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+    }
+    
+    .header-sticky .menu {
+        margin-top: 12px;
+    }
+    
+    .header-sticky .menu li > a {
+        padding-bottom: 20px;
+    }
+    
+    .header-sticky .sf-arrows .sf-with-ul:after {
+        margin-top: -8px;
+    }
+    
+    .header-sticky a.search-button {
+        display: none;
+    }
+
+}</pre>
+			
+            <pre>JS
+$(window).scroll(function(){
+    
+    if ($(this).scrollTop() > 200){  
+        $('header').addClass("header-sticky");
+    } else {
+        $('header').removeClass("header-sticky");
+    }
+    
+});</pre>
+            
+            </div><!-- content -->   
+        </div><!-- s5-6 -->
+        
+        <div id="s5-7" class="section">	
+            <div class="content">
+                               
+                <h3>5.7. Animations</h3>
+                
+                <br><br>
+                
+                <p>Reveal CSS animation as you scroll down a page. By default, you can use it to trigger <a target="_blank" href="http://daneden.github.io/animate.css/">animate.css</a> animations. But you can easily change the settings to your favorite animation library.</p>
+            
+            	<pre>HTML
+&lt;div class="wow fadeInDown" data-wow-delay="0.3s"&gt;
+	
+    &lt;p&gt;Cras molestie tristique lorem ac ultricies. Ut posuere arcu nec congue dictum. 
+    Nullam ut diam nec lectus lobortis.&lt;/p&gt;
+	
+&lt;/div&gt;
+
+&lt;div class="wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="2s" data-wow-offset="10" data-wow-iteration="10"&gt;
+	
+    &lt;p&gt;Cras molestie tristique lorem ac ultricies. Ut posuere arcu nec congue dictum. 
+    Nullam ut diam nec lectus lobortis.&lt;/p&gt;
+	
+&lt;/div&gt;</pre>
+			
+				<ul>
+					<li><code>.wow</code> - make an element revealable</li>
+					<li><code>.fadeInDown</code> - pick an animation style in animate.css </li>
+					<li><strong>data-wow-duration</strong> - change the animation duration</li>
+					<li><strong>data-wow-delay</strong> - delay before the animation starts</li>
+					<li><strong>data-wow-offset</strong> - distance to start the animation (related to the browser bottom margin)</li>
+					<li><strong>data-wow-iteration</strong> - number of times the animation is repeated</li>
+				</ul>
+	
+    			<pre>JS
+$(document).ready(function(){
+	
+    animations = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 100,
+        mobile: false,
+        live: true
+    })
+    
+    animations.init();
+    
+});</pre>
+            
+            	<ul>
+					<li><strong>boxClass</strong> - animated element css class</li>
+					<li><strong>animateClass</strong> - animation css class</li>
+					<li><strong>offset</strong> - distance to the element when triggering the animation</li>
+					<li><strong>mobile</strong> - trigger animations on mobile devices</li>
+					<li><strong>live</strong> - act on asynchronously loaded content</li>
+				</ul>
+				
+				<p>Read more about <a target="_blank" href="http://mynameismatthieu.com/WOW">Animations plugin</a>.</p>
+            
+            </div><!-- content -->   
+        </div><!-- s5-7 -->
+        
+        <div id="s5-8" class="section">	
+            <div class="content">
+                               
+                <h3>5.8. Google Maps</h3>
+                
+                <br><br>
+				
+                <p>gMap is a jQuery plugin that helps you embed Google Maps into your website.</p>
+                
+                <pre>HTML
+&lt;div class="map"&gt;&lt;/div&gt;</pre>
+            
+            	<pre>CSS
+.map {
+    margin-bottom: 100px;
+    height: 650px;
+}
+
+.map img { 
+    max-width: none; 
+}
+
+@media (max-width: 767px) {
+
+    .map {
+        height: 400px;
+    }
+
+}</pre>
+       			<pre>JS
+$(document).ready(function(){
+	
+    $(".map").gMap({
+        maptype: 'ROADMAP',
+        scrollwheel: false,
+        zoom: 11,
+        markers: [{
+           address: 'San Jose, California, USA',
+            html: 'MILO Office'
+        }],
+        controls: {
+            panControl: true,
+            zoomControl: true,
+            mapTypeControl: true,
+            scaleControl: false,
+            streetViewControl: false,
+            overviewMapControl: false
+        }
+    });
+    
+});</pre>
+				
+                <p>Read more about <a target="_blank" href="http://labs.mario.ec/jquery-gmap">gMps plugin</a>.</p>
+                     
+            </div><!-- content -->   
+        </div><!-- s5-8 -->
+        
+        <div id="s5-9" class="section">	
+            <div class="content">
+                               
+                <h3>5.9. Parallax</h3>
+                
+                <br><br>
+				
+                <p>A section has a background that moves slightly slower than the user scrolls. This is achieved by changing the top position 
+                of the background for every pixel the page is scrolled.</p>
+                
+                <pre>HTML
+&lt;section class="full-section parallax" style="background-image:url(image.jpg);"&gt;
+            	
+    &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-sm-12"&gt;
+				
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie metus at velit vestibulum 
+                sagittis. Mauris consequat maximus facilisis. In venenatis commodo enim, ut semper leo tempus sit amet. 
+                Nam sed aliquet libero. Aliquam feugiat porta metus, sit amet elementum turpis vulputate dapibus.&lt;/p&gt;
+				
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+	
+&lt;/section&gt;</pre>
+
+				<pre>CSS
+.parallax { 
+    background-attachment: fixed !important;
+    -webkit-background-size: cover !important;
+            background-size: cover !important;	
+}</pre>
+				
+                <pre>JS
+$(document).ready(function(){
+	
+    if (!is_touch_device()) {
+        $('.parallax').parallaxScroll({
+            friction: 0
+        });
+    }
+    
+});</pre>
+				
+                <p>Parallax effect is deactivated on mobile devices.<br>
+                Read more about <a target="_blank" href="http://parallax-scroll.aenism.com">Parallax</a>.</p>
+                     
+            </div><!-- content -->   
+        </div><!-- s5-9 -->
+        
+        <div id="s5-10" class="section">	
+            <div class="content">
+                               
+                <h3>5.10. Pie charts</h3>
+                
+                <br><br>
+				
+                <p>Easy pie chart is a jQuery plugin that uses the canvas element to render simple pie charts for single values.</p>
+                
+                <pre>HTML
+&lt;div class="pie-chart" data-percent="75" data-size="225" data-line-width="4" data-track-color="#3b3e43" data-bar-color="#bca480"&gt;
+                            
+    &lt;div class="pie-chart-details"&gt;
+        &lt;h1&gt;
+            &lt;span class="value"&gt;&lt;/span&gt;%
+            &lt;small&gt;Pure love&lt;/small&gt;
+        &lt;/h1&gt;
+        
+    &lt;/div&gt;&lt;!-- pie-chart-details --&gt;
+
+&lt;/div&gt;&lt;!-- pie-chart --&gt;</pre>
+				
+				<ul>
+					<li><strong>data-percent</strong> - the percent number of the pie chart</li>
+					<li><strong>data-size</strong> - size of the pie chart in px</li>
+					<li><strong>data-line-width</strong> - width of the bar line in px</li>
+					<li><strong>data-track-color</strong> - the color of the track for the bar, false to disable rendering</li>
+					<li><strong>data-bar-color</strong> - the color of the circular bar</li>
+				</ul>
+				
+                <pre>CSS
+.pie-chart {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pie-chart canvas {
+    max-width: 100%;
+}
+
+.pie-chart-details {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.pie-chart-details h1 {
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.pie-chart-details h1 small {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #bca480;
+}</pre>
+                     
+            	<pre>JS
+function pie_chart() {
+    
+    $(".pie-chart:in-viewport").each(function() {
+        
+        $(this).easyPieChart({
+            animate: 1500,
+            lineCap: "square",
+            lineWidth: $(this).attr("data-line-width"),
+            size: $(this).attr("data-size"),
+            barColor: $(this).attr("data-bar-color"),
+            trackColor: $(this).attr("data-track-color"),
+            scaleColor: "transparent",
+            onStep: function(from, to, percent) {
+                $(this.el).find('.pie-chart-details .value').text(Math.round(percent));
+            }
+        });
+        
+    });
+    
+}
+
+$(window).scroll(function(){
+		
+    pie_chart();
+    
+});</pre>
+            
+			<ul>
+				<li><strong>animate</strong> - time in milliseconds for a eased animation of the bar growing, or false to deactivate</li>
+				<li><strong>lineCap</strong> - defines how the ending of the bar line looks like. Possible values are: butt, round and square</li>
+				<li><strong>scaleColor</strong> - the color of the scale lines, false to disable rendering</li>
+			</ul>
+            
+			</div><!-- content -->   
+        </div><!-- s5-10 -->
+        
+        <div id="s5-11" class="section">	
+            <div class="content">
+                               
+                <h3>5.11. Progress bars</h3>
+                
+                <br><br>
+				
+                <p>Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.</p>
+                
+                <pre>HTML
+&lt;div class="progress"&gt;                        
+    &lt;div class="progress-bar" data-width="90"&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;!-- progess --&gt;
+
+&lt;div class="progress-bar-title"&gt;
+    &lt;h5&gt;Marketing &lt;span style="left:90%"&gt;90%&lt;/span&gt;&lt;/h5&gt;
+&lt;/div&gt;&lt;!-- progress-bar-title --&gt;</pre>
+                
+                <ul>
+					<li><strong>data-width</strong> - width of the bar line in percent</li>
+				</ul>
+					
+				<pre>CSS
+.progress {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: #d7d7d7;
+    height: 3px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #3b3e43;
+}
+
+.progress-bar-title {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.progress-bar-title h5 {
+    font-weight: 600;
+}
+
+.progress-bar-title span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+}</pre>
+            
+            	<pre>JS		
+function progress_bars() {
+        
+    $(".progress .progress-bar:in-viewport").each(function() {
+        
+        if (!$(this).hasClass("animated")) {
+            $(this).addClass("animated");
+            $(this).animate({
+                width: $(this).attr("data-width") + "%"
+            }, 700);
+        }
+        
+    });
+    
+}
+
+$(window).scroll(function(){
+		
+    progress_bars();
+    
+});</pre>
+            
+            </div><!-- content -->   
+        </div><!-- s5-11 -->
+		
+		<div id="s5-12" class="section">	
+            <div class="content">
+                               
+                <h3>5.12. Counter</h3>
+                
+                <br><br>
+				
+                <p>A light jQuery number counter plugin which allows you to count up towards a target number at a certain speed using jQuery <code>animate()</code> function.</p>
+				
+				<pre>HTML
+&lt;div class="counter"&gt;
+
+    &lt;i class="miu-icon-other_conversation_review_comment_bubble_talk_outline_stroke"&gt;&lt;/i&gt;
+    
+    &lt;div class="counter-value" data-value="139"&gt;&lt;/div&gt;
+    
+    &lt;div class="counter-details"&gt;
+        &lt;p&gt;Satisfied clients&lt;/p&gt;
+    &lt;/div&gt;&lt;!-- counter-details --&gt;
+    
+&lt;/div&gt;&lt;!-- counter --&gt;</pre>
+
+				<ul>
+					<li><strong>data-value</strong> - stop number</li>
+				</ul>
+
+				<pre>CSS
+.counter {
+    margin-bottom: 30px;
+    color: #bca480;
+    text-align: center;
+}
+
+.counter i {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.counter-value {
+    font-size: 72px;
+    line-height: 96px;
+    letter-spacing: 10px;
+    font-weight: 300;
+}
+
+.counter-details {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .counter-value {
+        font-size: 58px;
+        line-height: 72px;
+    }
+    
+}</pre>
+
+				<pre>JS
+function counter() {
+    
+    $(".counter .counter-value:in-viewport").each(function() {
+        
+        if (!$(this).hasClass("animated")) {
+            $(this).addClass("animated");
+            $(this).jQuerySimpleCounter({
+                start: 0,
+                end: $(this).attr("data-value"),
+                duration: 2000
+            });    
+        }
+    
+    });
+    
+}
+
+$(window).scroll(function(){
+        
+    counter();
+    
+});</pre>
+				
+				<ul>
+					<li><strong>start</strong> - start number</li>
+					<li><strong>duration</strong> - animation speed</li>
+				</ul>
+				
+				<p>Read more about <a target="_blank" href="http://www.jqueryscript.net/time-clock/Lightweight-jQuery-Animated-Counter-Plugin.html">Counter</a>.</p>
+                
+            
+            </div><!-- content -->   
+        </div><!-- s5-12 -->
+		
+		<div id="s5-13" class="section">	
+            <div class="content">
+                               
+                <h3>5.13. Statistics</h3>
+                
+                <br><br>
+				
+                <p>Chart.js uses the HTML5 canvas element. It's supported in all modern browsers. Chart.js is dependency free and super lightweight.</p>
+				
+				<pre>HTML
+&lt;div class="chart-container"&gt;
+    &lt;canvas id="line-chart" class="animate-chart"&gt;&lt;/canvas&gt;
+&lt;/div&gt;&lt;!-- chart-container --&gt;
+
+&lt;div class="chart-container"&gt;
+    &lt;canvas id="bar-chart" class="animate-chart"&gt;&lt;/canvas&gt;
+&lt;/div&gt;&lt;!-- chart-container --&gt;
+
+&lt;div class="chart-container"&gt;
+    &lt;canvas id="pie-chart" class="animate-chart"&gt;&lt;/canvas&gt;
+&lt;/div&gt;&lt;!-- chart-container --&gt;</pre>
+
+				<pre>JS
+function animate_charts() {
+        
+    $(".chart-container .animate-chart:in-viewport").each(function() {
+        
+        if(!$(this).hasClass("animated")) {
+            
+            $(this).addClass("animated");
+            
+            // LINE CHART //
+            var data = {
+                labels : ["JAN 2014","","","","","","","AUG 2014","","","","","","FEB 2015"],
+                datasets : [
+                    {
+                        fillColor: "transparent",
+                        strokeColor: "transparent",
+                        pointColor: "transparent",
+                        pointStrokeColor: "transparent",
+                        data : [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+                    },
+                    {
+                        fillColor: "transparent",
+                        strokeColor: "transparent",
+                        pointColor: "transparent",
+                        pointStrokeColor: "transparent",
+                        data : [100,100,100,100,100,100,100,100,100,100,100,100,100,100]
+                    },
+                    {
+                        fillColor: "transparent",
+                        strokeColor: "#3b3e43",
+                        pointColor: "transparent",
+                        pointStrokeColor: "transparent",
+                        data : [35,60,30,40,30,55,45,75,45,55,35,55,45,60]
+                    },
+                    {
+                        fillColor: "transparent",
+                        strokeColor: "#a2a5ab",
+                        pointColor: "transparent",
+                        pointStrokeColor: "transparent",
+                        data : [30,30,25,28,25,35,28,30,35,65,30,45,40,50]
+                    },
+                    {
+                        fillColor: "transparent",
+                        strokeColor: "#efdbbd",
+                        pointColor: "transparent",
+                        pointStrokeColor: "transparent",
+                        data : [10,5,15,10,15,5,15,25,20,15,25,5,30,20]
+                    },
+                    {
+                        fillColor: "transparent",
+                        strokeColor: "#bca480",
+                        pointColor: "transparent",
+                        pointStrokeColor: "transparent",
+                        data : [15,18,21,15,20,15,5,20,15,18,21,15,20,35]
+                    }                            
+                ]
+            }
+        
+            var line_chart = new Chart(document.getElementById("line-chart").getContext("2d")).Line(data, { 
+                responsive: true,
+                showTooltips: false,
+                bezierCurve: false
+            });
+            
+            
+            // BAR CHARTS //
+            var data = {
+                labels: ["FIRST SEM", "SECOND SEM", "THIRD SEM"],
+                datasets: [
+                    {
+                        label: "",
+                        fillColor: "transparent",
+                        strokeColor: "transparent",
+                        highlightFill: "transparent",
+                        highlightStroke: "transparent",
+                        data: [100, 100, 100]
+                    },
+                    {
+                        label: "",
+                        fillColor: "#3b3e43",
+                        strokeColor: "#3b3e43",
+                        highlightFill: "#3b3e43",
+                        highlightStroke: "#3b3e43",
+                        data: [65, 60, 55]
+                    },
+                    {
+                        label: "",
+                        fillColor: "#a2a5ab",
+                        strokeColor: "#a2a5ab",
+                        highlightFill: "#a2a5ab",
+                        highlightStroke: "#a2a5ab",
+                        data: [60, 50, 45]
+                    },
+                    {
+                        label: "",
+                        fillColor: "#efdbbd",
+                        strokeColor: "#efdbbd",
+                        highlightFill: "#efdbbd",
+                        highlightStroke: "#efdbbd",
+                        data: [50, 55, 85]
+                    },
+                    {
+                        label: "",
+                        fillColor: "#bca480",
+                        strokeColor: "#bca480",
+                        highlightFill: "#bca480",
+                        highlightStroke: "#bca480",
+                        data: [55, 75, 70]
+                    }
+                ]
+            };
+            
+            var bar_charterfw  = new Chart(document.getElementById("bar-chart").getContext("2d")).Bar(data, { 
+                responsive: true,
+                showTooltips: false,
+                barShowStroke: true,
+                barStrokeWidth: 1,
+                barValueSpacing: 5,
+                barDatasetSpacing: 10
+            });
+            
+            
+            // PIE CHART
+            var data = [                    
+                {
+                    value: 15,
+                    color: "#efdbbd",
+                    highlight: "#efdbbd",
+                    label: "#efdbbd"
+                },
+                {
+                    value: 50,
+                    color:"#3b3e43",
+                    highlight: "#3b3e43",
+                    label: "#3b3e43"
+                },                
+                {
+                    value: 15,
+                    color: "#a2a5ab",
+                    highlight: "#a2a5ab",
+                    label: "#a2a5ab"
+                },                                        
+                {
+                    value: 20,
+                    color: "#bca480",
+                    highlight: "#bca480",
+                    label: "#bca480"
+                }
+            ]
+            
+            var pie_chart = new Chart(document.getElementById("pie-chart").getContext("2d")).Pie(data, { 
+                responsive: true,
+                showTooltips: false,
+                animationSteps: 30
+            });
+                
+        }
+        
+    });
+        
+}
+
+$(window).scroll(function(){
+        
+    animate_charts();
+    
+});</pre>
+			
+				<p>Read more about <a target="_blank" href="http://www.chartjs.org">chart.js.</a><p>
+                
+            
+            </div><!-- content -->   
+        </div><!-- s5-13 -->
+        
+        <div id="s5-14" class="section">	
+            <div class="content">
+                               
+                <h3>5.14. Isotope</h3>
+                
+                <br><br>
+				
+                <p>Filter and sort magical layouts. The filtering on the portfolio is done with Isotope.</p>
+                
+                <pre>HTML
+&lt;ul class="filter"&gt;
+    &lt;li&gt;
+        &lt;a class="active" href="#" data-filter="*"&gt;All the work&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href="#" data-filter=".categ-1"&gt;Design&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href="#" data-filter=".categ-2"&gt;Photography&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href="#" data-filter=".categ-3"&gt;Industrial&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="isotope col-3 clearfix"&gt;
+    
+    &lt;div class="isotope-item categ-1 categ-3"&gt;
+        
+        &lt;div class="portfolio-item"&gt;
+    
+            &lt;div class="portfolio-item-thumbnail"&gt;
+            
+                &lt;img src="images/portfolio/image-8.jpg" alt=""&gt;
+                
+                &lt;div class="portfolio-item-hover"&gt;
+                    
+                    &lt;a class="fancybox-gallery zoom-action" href="images/portfolio/image-8.jpg"&gt;&lt;i class="fa fa-plus"&gt;&lt;/i&gt;&lt;/a&gt;
+                    
+                &lt;/div&gt;&lt;!-- portfolio-item-hover --&gt;
+                
+            &lt;/div&gt;&lt;!-- portfolio-item-thumbnail --&gt;
+            
+            &lt;div class="portfolio-item-description"&gt;
+                        
+                &lt;h3&gt;&lt;a href="portfolio-single.html"&gt;Business card&lt;/a&gt;&lt;/h3&gt;
+                &lt;h5&gt;Industrial design&lt;/h5&gt;
+                
+                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.&lt;/p&gt;
+                
+                &lt;a class="btn btn-default" href="portfolio-single.html"&gt;View more&lt;/a&gt;
+                
+            &lt;/div&gt;&lt;!-- portfolio-item-description --&gt;
+            
+        &lt;/div&gt;&lt;!-- portfolio-item --&gt;
+        
+    &lt;/div&gt;&lt;!-- isotope-item --&gt;
+    
+    ...
+
+</pre>
+
+				<pre>CSS
+/***********************************************************************************
+*    + FILTER
+***********************************************************************************/
+
+.filter {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.filter li {
+    line-height: 13px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #bca480;
+}
+
+.filter li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+.filter li a {
+    text-decoration: none;
+    color: #3b3e43;
+    font-weight: 600;
+    -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+}
+
+.filter li a:hover,
+.filter li a.active {
+    color: #bca480;;
+}
+
+/***********************************************************************************
+*    + ISOTOPE
+***********************************************************************************/
+
+.isotope {
+    margin: -15px -15px 30px; 
+}
+
+.isotope.no-space {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.isotope .isotope-item {
+    float: left;
+    width: 25%;
+    padding: 15px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.isotope.no-space .isotope-item {
+    padding: 0;
+}
+
+.isotope.col-3 .isotope-item {
+    width: 33.333333%;
+}
+
+.isotope.col-4 .isotope-item {
+    width: 25%;
+}
+
+.isotope.col-5 .isotope-item {
+    width: 25%;
+}
+
+@media (min-width: 1200px) {
+    
+    .isotope.col-5 .isotope-item {
+        width: 20%;
+    }
+        
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .isotope .isotope-item,
+    .isotope.col-3 .isotope-item,
+    .isotope.col-4 .isotope-item {
+        width: 50%;
+    }
+    
+    .isotope.col-5 .isotope-item {
+        width: 33.33333333333%;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .filter li {
+        display: block;
+        border-right: none;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    
+    .filter li a {
+        display: block;
+        padding: 5px 0;
+    }
+    
+    .isotope .isotope-item {
+        float: none;
+        width: 100%;
+    }
+    
+    .isotope.col-3 .isotope-item,
+    .isotope.col-4 .isotope-item,
+    .isotope.col-5 .isotope-item {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+    .isotope.col-5 .isotope-item {
+        float: left;
+        width: 50%;
+    }
+    
+}</pre>
+            
+            	<pre>JS
+$(document).ready(function(){
+	
+    $('.isotope').imagesLoaded( function() {
+			
+        var container = $('.isotope');
+        
+        container.isotope({
+            itemSelector: '.isotope-item',
+            layoutMode: 'masonry',
+            transitionDuration: '0.8s'
+        });
+        
+        $('.filter li a').click(function () {
+            $('.filter li a').removeClass('active');
+            $(this).addClass('active');
+
+            var selector = $(this).attr('data-filter');
+            container.isotope({
+                filter: selector
+            });
+
+            return false;
+        });
+
+        $(window).resize(function () {
+            container.isotope();
+        });
+        
+    });
+    
+});
+</pre>
+            	<p>Read more about <a target="_blank" href="http://isotope.metafizzy.co">Isotope</a>.</p>    
+            
+            </div><!-- content -->   
+        </div><!-- s5-14 -->
+        
+        <div id="s5-15" class="section">	
+            <div class="content">
+                               
+                <h3>5.15. Load more</h3>
+                
+                <br><br>
+				
+                <p>Load more projects. The file <code>more-projects.html</code> contains the project who will load on page.</p>  
+                
+                <pre>HTML
+&lt;a class="btn btn-default load-more" href="more-projects.html"&gt;Load more&lt;/a&gt;</pre>
+
+				<ul>
+					<li><strong>more-projects.html</strong> - HTML file that loads content</li>
+				</ul>
+				
+                <pre>JS
+function load_more_projects() {
+	
+    var number_clicks = 0;
+    
+    $('.load-more').click(function(e) {
+        
+        e.preventDefault();
+        
+        if (number_clicks == 0) {
+            $.ajax({
+                type: "POST",
+                url: $(".load-more").attr("href"),
+                dataType: "html",
+                cache: false,
+                msg : '',
+                success: function(msg) {
+                    $('.isotope').append(msg);	
+                    $('.isotope').imagesLoaded(function() {
+                        $('.isotope').isotope('reloadItems').isotope();
+                    });
+                    number_clicks++;
+                    $(".load-more").html("No more project");
+                }
+            });
+        }
+        
+    });
+    
+}
+
+$(document).ready(function(){
+
+	load_more_projects();
+
+});</pre>
+            
+            </div><!-- content -->   
+        </div><!-- s5-15 -->
+        
+        <div id="s5-16" class="section">	
+            <div class="content">
+                               
+                <h3>5.16. Contact form</h3>
+                
+                <br><br>
+                
+                <pre>HTML
+&lt;form id="contact-form" name="contact-form" action="assets/php/send.php" method="post"&gt;
+    &lt;fieldset&gt;
+        
+        &lt;div id="alert-area"&gt;&lt;/div&gt;
+        
+        &lt;input class="col-xs-12" id="name" type="text" name="name" placeholder="name"&gt;
+    
+        &lt;input class="col-xs-12" id="email" type="text" name="email" placeholder="email"&gt;
+    
+        &lt;input class="col-xs-12" id="subject" type="text" name="subject" placeholder="subject"&gt;
+    
+        &lt;textarea class="col-xs-12" id="message" name="message" rows="8" cols="25" placeholder="message"&gt;&lt;/textarea&gt;
+    
+        &lt;input class="btn btn-default" id="submit" type="submit" name="submit" value="Submit"&gt;
+        
+    &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
+
+				<pre>CSS
+#contact-form {
+    margin-bottom: 50px;
+}
+
+#contact-form input[type="text"],
+#contact-form textarea {
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+#contact-form textarea {
+    margin-bottom: 40px;
+}
+
+#contact-form input[type="text"]:focus,
+#contact-form textarea:focus {
+    border-bottom-color: #3b3e43;
+    outline: 0;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #3b3e43;
+}
+
+#contact-form label.error {
+    display: block;
+    color: #f00;
+}</pre>
+
+				<pre>JS
+$(document).ready(function(){
+
+	// VALIDATE //
+    $('#contact-form').validate({
+        rules: {
+            name: {
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            subject: {
+                required: true
+            },
+            message: {
+                required: true,
+                minlength: 10
+            }
+        },
+        messages: {
+            name: {
+                required: "Please enter your name!"
+            },
+            email: {
+                required: "Please enter your email!",
+                email: "Please enter a valid email address"
+            },
+            subject: {
+                required: "Please enter the subject!"
+            },
+            message: {
+                required: "Please enter your message!"
+            }
+        },
+            
+        // SUBMIT //
+        submitHandler: function(form) {
+            var result;
+            $(form).ajaxSubmit({
+                type: "POST",
+                data: $(form).serialize(),
+                url: "assets/php/send.php",
+                success: function(msg) {
+                    
+                    if (msg == 'OK') {
+                        result = '&lt;div class="alert alert-success"&gt;Your message was successfully sent!&lt;/div&gt;';
+                        $('#contact-form').clearForm();
+                    } else {
+                        result = msg;
+                    }
+                    
+                    $("#alert-area").html(result);
+
+                },
+                error: function() {
+
+                    result = '&lt;div class="alert alert-danger"&gt;There was an error sending the message!&lt;/div&gt;';
+                    $("#alert-area").html(result);
+
+                }
+            });
+        }
+    });
+    
+});</pre>
+            
+            	<p>Read more about <a target="_blank" href="http://jqueryvalidation.org">Validate</a> and <a target="_blank" href="http://malsup.com/jquery/form">Submit</a> form.</p>
+            
+            </div><!-- content -->   
+        </div><!-- s5-16 -->
+        
+        <div id="s5-17" class="section">	
+            <div class="content">
+                               
+                <h3>5.17. Flickr</h3>
+                
+                <br><br>
+				
+				<p>Flickr photos are added through a flickr badge. You can generate one on the flickr website or just change the photo set used by 
+                the current one.</p>
+                
+                <pre>HTML
+&lt;div class="flickr-photos"&gt;
+    &lt;script src="http://www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=131310449@N08"&gt;&lt;/script&gt;
+&lt;/div&gt;&lt;!-- flickr-photos --&gt;</pre>
+
+				<pre>CSS
+.flickr-photos {
+    margin-bottom: 25px;
+}
+
+.flickr_badge_image {
+    float: left;
+    padding: 1px;
+}
+
+.flickr_badge_image img {
+    width: 85px;
+    height: auto;
+}
+
+.flickr-photos:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}</pre>
+				<p>Read more about <a target="_blank" href="http://www.flickrbadge.com">Flickr Badge</a>.</p>
+                
+            </div><!-- content -->   
+        </div><!-- s5-17 --> 
+		
+		
+		<div id="s5-18" class="section">	
+            <div class="content">
+                               
+                <h3>5.18. Twitter</h3>
+                
+                <br><br>
+				
+				<p>Allows you to get your tweets displaying on your website using JavaScript.</p>
+				
+				<pre>HTML
+&lt;div id="tweet"&gt;&lt;/div&gt;</pre>
+
+				<pre>JS
+twitterFetcher.fetch('577947334656548864', '', 3, true, false, false, '', false, handleTweets);
+
+function handleTweets(tweets) {
+    
+    var x = tweets.length;
+    var n = 0;
+    var element = document.getElementById('tweet');
+    var html = '&lt;ul&gt;';
+    
+    while(n &lt; x) {
+        html += '&lt;li&gt;' + tweets[n] + '&lt;/li&gt;';
+        n++;
+    }
+    
+    html += '&lt;/ul&gt;';
+    element.innerHTML = html;
+    
+    /* Twitter Slider */
+            
+    $('#tweet ul').bxSlider({
+         mode: 'vertical',    
+         speed: 500,
+         infiniteLoop: true,
+         hideControlOnEnd: false,
+         pager: false,
+         pagerType: 'full',
+         controls: true,
+         auto: true,
+         pause: 4000,
+         autoHover: true,
+         useCSS: false,
+         nextSelector: '#twitter-slider-next',
+         prevSelector: '#twitter-slider-prev',
+         nextText: '<i class="fa fa-angle-down"></i>',
+         prevText: '<i class="fa fa-angle-up"></i>'
+    });
+}</pre>
+				
+				<p>Read more about <a target="_blank" href="http://www.jasonmayes.com/projects/twitterApi/#sthash.EyDiXTHJ.dpbs">Twitter Fetcher</a>.</p>
+                
+            </div><!-- content -->   
+        </div><!-- s5-18 -->
+        
+        <div id="s5-19" class="section">	
+            <div class="content">
+                               
+                <h3>5.19. Go top</h3>
+                
+                <br><br>
+				
+				<p>Go to the top of the page.</p>
+                
+                <pre>HTML
+&lt;a id="go-top"&gt;&lt;i class="fa fa-arrow-up"&gt;&lt;/i&gt;&lt;/a&gt;</pre>
+
+				<pre>CSS
+#go-top {
+    z-index: 99999;
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    font-size: 24px;
+    line-height: 48px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    background-color: #0066a0;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+}
+
+#go-top:hover {
+    background-color: #265665;
+}</pre>
+				
+                <pre>JS
+function show_hide_go_top() {
+		
+    if ($(window).width() > 767) {
+    
+        if ($(window).scrollTop() > $(window).height()/2) {
+            $('#go-top').fadeIn(300);
+        } else {
+            $('#go-top').fadeOut(300);
+        }
+        
+    }
+    
+}
+
+function go_top() {				
+		
+    $('#go-top').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+    
+}
+
+$(document).ready(function(){	
+
+	show_hide_go_top();
+    go_top();
+
+});
+
+$(window).scroll(function(){
+	
+    show_hide_go_top();
+    
+});</pre>
+                
+            </div><!-- content -->   
+        </div><!-- s5-19 -->        
+        
+    </div><!-- content -->
+    
+    <!-- jQUERY -->
+    <script src="assets/jquery-2.1.3.min.js"></script>
+    
+    <!-- SCROLLSPY -->
+    <script src="assets/scrollspy.min.js"></script>
+    
+    <!-- SCRIPT -->
+    <script src="assets/script.js"></script>
+    
+</body>
+
+</html>
